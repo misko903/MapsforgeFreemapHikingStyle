@@ -26,7 +26,7 @@
                 <pathText k="name" font-style="bold" font-size="10dp" fill="#EEFFFFFF" stroke="#66000000" stroke-width="2dp" />
             </rule>
         </rule>
-            <rule e="way" k="natural" v="coastline">
+            <rule cat="topo_common" e="way" k="natural" v="coastline">
                 <rule e="way" k="*" v="*" closed="no">
                     <line stroke="#708599" stroke-width="2.0dp"/>
                 </rule>
@@ -34,34 +34,34 @@
                     <area fill="#b5d6f1" stroke="#b5d6f1" stroke-width="0.4dp"/>
                 </rule>
             </rule>
-            <rule e="way" k="natural" v="bare_rock">
+            <rule cat="topo_common" e="way" k="natural" v="bare_rock">
                 <area src="file:/patterns/barerock.png" fill="#d7d6d5" stroke-width="0"/>
             </rule>
-             <rule e="way" k="natural" v="scree">
+             <rule cat="topo_common" e="way" k="natural" v="scree">
                 <area src="file:/patterns/scree.png" fill="#d7d6d5" stroke-width="0"/>
             </rule>
-             <rule e="way" k="natural" v="fell">
+             <rule cat="topo_common" e="way" k="natural" v="fell">
                 <area fill="#e3e2a1" stroke-width="0"/>
             </rule>
-             <rule e="way" k="natural" v="scrub">
+             <rule cat="topo_common" e="way" k="natural" v="scrub">
                 <area fill="#d6e8b7" stroke-width="0"/>
             </rule>
-             <rule e="way" k="natural" v="heath">
+             <rule cat="topo_common" e="way" k="natural" v="heath">
                 <area fill="#d6e8b7" stroke-width="0"/>
             </rule>
-            <rule e="way" k="natural" v="glacier">
+            <rule cat="topo_common" e="way" k="natural" v="glacier">
                 <area fill="#fafaff" stroke="#add8e6" stroke-width="0.8dp"/>
             </rule>
-            <rule e="way" k="natural" v="land">
+            <rule cat="topo_common" e="way" k="natural" v="land">
                 <area fill="#f8f8f8" stroke="#e0e0e0" stroke-width="0.1dp"/>
             </rule>
-            <rule e="way" k="natural" v="beach">
+            <rule cat="topo_common" e="way" k="natural" v="beach">
                 <area fill="#eecc55"/>
             </rule>
-            <rule e="way" k="natural" v="heath">
+            <rule cat="topo_common" e="way" k="natural" v="heath">
                 <area fill="#ffffc0" stroke="#ffff90" stroke-width="0.2dp"/>
             </rule>
-            <rule e="way" k="natural" v="marsh|wetland">
+            <rule cat="topo_common" e="way" k="natural" v="marsh|wetland">
                 <area src="file:/patterns/marsh.png"/>
             </rule>
             <rule cat="topo_common" e="way" k="natural" v="cliff" zoom-min="14">
@@ -126,17 +126,17 @@
                 </rule>
             </rule>
         </rule>
-        <rule e="node" k="waterway" v="waterfall" zoom-min="14">
+        <rule cat="ol-topo_common" e="node" k="waterway" v="waterfall" zoom-min="14">
           <symbol src="file:/symbols/waterfall.svg" symbol-width="12dp"/>
           <caption k="name" dy="16dp" font-style="bold_italic" font-family="serif" font-size="7dp" scale-font-size="16,1.1" fill="#4040ff" stroke="#ffffff" stroke-width="1.8dp"/>
         </rule>
-        <rule cat="topo_common" e="node" k="amenity" v="hunting_stand" zoom-min="14">
+        <rule cat="ol-topo_common" e="node" k="amenity" v="hunting_stand" zoom-min="14">
             <symbol src="file:/symbols/hunting_stand.svg" symbol-width="14dp"/>
         </rule>
-        <rule e="node" k="man_made" v="mast" zoom-min="14">
+        <rule cat="topo_common" e="node" k="man_made" v="mast" zoom-min="14">
             <symbol src="file:/symbols/tower_comm.svg" symbol-width="14dp"/>
         </rule>
-        <rule e="node" k="man_made" v="tower" zoom-min="14">
+        <rule cat="topo_common" e="node" k="man_made" v="tower" zoom-min="14">
             <rule e="node" k="tower:type" v="communication">
                 <symbol src="file:/symbols/tower_comm.svg" symbol-width="14dp"/>
             </rule>

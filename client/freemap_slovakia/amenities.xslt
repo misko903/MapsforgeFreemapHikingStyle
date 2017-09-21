@@ -3,7 +3,7 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://mapsforge.org/renderTheme" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
     <xsl:template name="amenity_ways">
-        <rule e="way" k="amenity" v="*">
+        <rule cat="default" e="way" k="amenity" v="*">
             <rule e="way" k="amenity" v="kindergarten|school|college|university">
                 <area fill="#DFAFDD" stroke="#e9dd72" stroke-width="0.2dp"/>
             </rule>
@@ -41,7 +41,7 @@
     </xsl:template>
 
     <xsl:template name="amenity_nodes">
-        <rule e="node" k="amenity" v="*">
+        <rule cat="default" e="node" k="amenity" v="*">
             <rule e="node" k="amenity" v="atm" zoom-min="17">
                 <symbol src="file:/symbols/atm.png" symbol-width="12dp"/>
             </rule>

@@ -185,7 +185,7 @@
 
     <xsl:template name="markedTrailsAllNew">
         <!-- turistika nová -->
-        <rule cat="hiking" e="way" k="highway" v="*" zoom-min="11">
+        <rule cat="ol-hiking" e="way" k="highway" v="*" zoom-min="11">
             <rule e="way" k="addr:housenumber" v="*" zoom-min="16">
                 <pathText k="addr:housenumber" dy="10dp" font-style="bold" font-size="9dp" fill="#000000" stroke="#ffffff" stroke-width="2.2dp"/>
             </rule>
@@ -200,7 +200,7 @@
             </xsl:call-template>
         </rule>
         <!-- cyklistika nová -->
-        <rule cat="cycle" e="way" k="highway" v="*" zoom-min="11">
+        <rule cat="ol-cycle" e="way" k="highway" v="*" zoom-min="11">
             <xsl:call-template name="markedTrailsSingle">
                 <xsl:with-param name="redKey" select="'fmrelbicyclered'"/>
                 <xsl:with-param name="blueKey" select="'fmrelbicycleblue'"/>
@@ -212,7 +212,7 @@
             </xsl:call-template>
         </rule>
         <!-- lyže nová -->
-        <rule cat="ski" e="way" k="highway" v="*" zoom-min="11">
+        <rule cat="ol-ski" e="way" k="highway" v="*" zoom-min="11">
             <xsl:call-template name="markedTrailsSingle">
                 <xsl:with-param name="redKey" select="'fmrelskired'"/>
                 <xsl:with-param name="blueKey" select="'fmrelskiblue'"/>

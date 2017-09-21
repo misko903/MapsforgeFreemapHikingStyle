@@ -3,7 +3,7 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://mapsforge.org/renderTheme" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
     <xsl:template name="leisure_ways">
-        <rule e="way" k="leisure" v="*">
+        <rule cat="default" e="way" k="leisure" v="*">
             <rule e="way" k="leisure" v="park|garden|golf_course|common|green">
                 <area fill="#C7F1A3" stroke="#6FC18E" stroke-width="0.2dp"/>
             </rule>
@@ -38,7 +38,7 @@
     </xsl:template>
 
     <xsl:template name="leisure_nodes">
-        <rule e="node" k="leisure" v="playground" zoom-min="17">
+        <rule cat="default" e="node" k="leisure" v="playground" zoom-min="17">
             <symbol src="file:/symbols/playground.png" symbol-width="12dp"/>
         </rule>
     </xsl:template>

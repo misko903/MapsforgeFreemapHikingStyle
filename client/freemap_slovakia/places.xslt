@@ -3,7 +3,7 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://mapsforge.org/renderTheme" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
     <xsl:template name="places">
-        <rule e="node" k="place" v="*">
+        <rule cat="ol-places" e="node" k="place" v="*">
             <rule e="node" k="place" v="city" zoom-max="14">
                 <caption k="name" font-style="bold" font-size="16dp" fill="#000000" stroke="#ffffff" stroke-width="3dp"/>
             </rule>

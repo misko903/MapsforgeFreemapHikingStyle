@@ -4,7 +4,7 @@
 
     <xsl:template name="highways_no_tunnel">
         <!-- no tunnel -->
-        <rule e="way" k="tunnel" v="~|no|false">
+        <rule cat="default" e="way" k="tunnel" v="~|no|false">
             <!-- no area -->
             <rule e="way" k="area" v="~|no|false">
                 <!-- highway -->
@@ -87,7 +87,7 @@
     </xsl:template>
 
     <xsl:template name="highway_tunnels">
-        <rule e="way" k="highway" v="*">
+        <rule cat="default" e="way" k="highway" v="*">
             <!-- highway tunnel casings -->
             <rule e="way" k="highway" v="steps|footway|path">
                 <line stroke="#707070" stroke-width="0.6dp" stroke-dasharray="5,5" stroke-linecap="butt"/>
@@ -139,7 +139,7 @@
     </xsl:template>
 
     <xsl:template name="highway_areas">
-        <rule e="way" k="area" v="yes|true">
+        <rule cat="default" e="way" k="area" v="yes|true">
             <rule e="way" k="highway" v="*">
                 <rule e="way" k="highway" v="footway|footpath" zoom-min="12">
                     <area fill="#e5e0c2" stroke="#707070" stroke-width="0.15dp"/>
@@ -170,7 +170,7 @@
     </xsl:template>
 
     <xsl:template name="highway_cores">
-        <rule e="way" k="highway" v="*">
+        <rule cat="default" e="way" k="highway" v="*">
             <!-- no tunnel -->
             <rule e="way" k="tunnel" v="~|no|false">
                 <!-- no area -->

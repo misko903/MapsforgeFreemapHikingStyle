@@ -5,7 +5,7 @@
     <xsl:template name="landuses">
 
         <!-- landuse -->
-        <rule e="way" k="natural|landuse" v="forest|wood">
+        <rule cat="default" e="way" k="natural|landuse" v="forest|wood">
             <rule e="way" k="wood|forest" v="*">
                 <rule e="way" k="wood|forest" v="coniferous">
                     <area fill="#B6D9BE"/>
@@ -24,7 +24,7 @@
                 <caption k="name" font-style="bold" font-size="10dp" fill="#40ff40" stroke="#ffffff" stroke-width="2.0dp"/>
             </rule>
         </rule>
-        <rule e="way" k="landuse" v="*">
+        <rule cat="default" e="way" k="landuse" v="*">
             <rule e="way" k="landuse" v="farmyard">
                 <area fill="#80DFCFBC"/>
             </rule>
@@ -79,7 +79,7 @@
                 <caption k="name" font-style="bold" font-size="10dp" fill="#808080" stroke="#ffffff" stroke-width="2.0dp"/>
             </rule>
         </rule>
-        <rule e="way" k="landuse" v="military">
+        <rule cat="default" e="way" k="landuse" v="military">
             <area src="file:/patterns/military.png"/>
         </rule>
 

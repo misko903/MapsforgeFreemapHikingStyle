@@ -3,7 +3,7 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://mapsforge.org/renderTheme" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
     <xsl:template name="railways_no_tunnel">
-        <rule e="way" k="railway" v="*">
+        <rule cat="default" e="way" k="railway" v="*">
             <rule e="way" k="tunnel" v="~|false|no">
                 <rule e="way" k="railway" v="station">
                     <area fill="#9b9b79" stroke="#707070" stroke-width="0.3dp"/>
@@ -85,7 +85,7 @@
     </xsl:template>
 
     <xsl:template name="railway_tunnels">
-        <rule e="way" k="railway" v="*">
+        <rule cat="default" e="way" k="railway" v="*">
             <rule e="way" k="railway" v="tram|subway|light_rail|narrow_gauge" zoom-min="12">
                 <line stroke="#880f0f4c" stroke-width="0.25dp" stroke-dasharray="4,4" stroke-linecap="butt"/>
             </rule>
@@ -96,7 +96,7 @@
     </xsl:template>
 
     <xsl:template name="railway_nodes">
-        <rule e="node" k="railway" v="*">
+        <rule cat="default" e="node" k="railway" v="*">
             <rule e="node" k="railway" v="crossing" zoom-min="16">
                 <symbol src="file:/symbols/railway-crossing-small.png"/>
             </rule>

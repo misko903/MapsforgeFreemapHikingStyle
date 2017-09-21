@@ -3,7 +3,7 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://mapsforge.org/renderTheme" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
     <xsl:template name="pistes">
-        <rule cat="ski" e="way" k="piste:type" v="*" zoom-min="11">
+        <rule cat="ol-ski" e="way" k="piste:type" v="*" zoom-min="11">
 
             <!-- piste areas -->
             <rule e="way" k="piste:type" v="downhill" closed="yes">

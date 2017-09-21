@@ -3,7 +3,7 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://mapsforge.org/renderTheme" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
     <xsl:template name="waterways">
-        <rule e="way" k="waterway" v="*">
+        <rule cat="default" e="way" k="waterway" v="*">
             <!-- waterway casings -->
             <rule e="way" k="waterway" v="drain" zoom-min="13">
                 <rule e="way" k="tunnel" v="yes|culvert">
